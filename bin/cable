@@ -1,2 +1,2 @@
 #!/bin/bash
-bundle exec puma -p 28080 cable/config.ru
+bundle exec thin start -C config/cable.yml

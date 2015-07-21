@@ -6,7 +6,7 @@ gem 'arel', github: "rails/arel"
 gem 'actioncable', github: "rails/actioncable"
 
 gem 'sqlite3'
-gem 'puma'
+gem 'thin'
 
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
@@ -24,3 +24,5 @@ group :development do
   gem 'web-console', github: 'rails/web-console'
   gem 'spring'
 end
+
+gem 'whenever'

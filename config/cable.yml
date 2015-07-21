@@ -1,0 +1,19 @@
+---
+chdir: /home/user/drifting_ruby
+environment: production
+port: 28080
+timeout: 30
+log: log/thin.log
+pid: tmp/pids/thin.pid
+max_conns: 8192
+max_persistent_conns: 8192
+require: []
+wait: 30
+threadpool_size: 4
+servers: 1
+daemonize: true
+ssl: true
+ssl-disable-verify: true
+ssl_key_file: ssl/ssl.key
+ssl_cert_file: ssl/ssl.crt
+rackup: cable/config.ru
